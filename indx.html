@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Travel Booking System</h1>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="indx.html">Home</a></li>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="indx1.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="home">
+            <h2>Welcome to our Travel Booking System</h2>
+            
+        </section>
+
+        <section id="search">
+            <h2>Search for your desired destination</h2>
+            
+            <form id="searchForm">
+                <label for="destination"></label>
+                <input type="text" id="destination" name="destination" placeholder="Enter your destination" required>
+        
+                <button type="submit">Search</button>
+            </form>
+        
+            <!-- Search Results -->
+            <div id="searchResults">
+                <!-- Results will be displayed here -->
+            </div>
+
+            
+        </section>
+
+        <section id="booking">
+            <h2>
+                <a href="#">Book your travel</a>
+            </h2>
+            
+        </section>
+
+        <section id="login">
+            <h2>
+                <a href="indx1.html">User Login</a>
+            </h2>
+            
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Travel Booking System</p>
+    </footer>
+
+
+<script>
+    document.getElementById('searchForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevents the default form submission behavior
+
+        // Get input value
+        var destination = document.getElementById('destination').value;
+
+        // Perform search 
+        var searchResults = performSearch(destination);
+
+        // Display results
+        displayResults(searchResults);
+    });
+
+    function performSearch(destination) {
+        
+        return [
+            { name: 'Hotel A', location: 'City A', price: '$100/night' },
+            { name: 'Hotel B', location: 'City B', price: '$120/night' },
+            // Add more results as needed
+        ];
+    }
+
+    function displayResults(results) {
+        var resultsContainer = document.getElementById('searchResults');
+        resultsContainer.innerHTML = ''; // Clear previous results
+
+        // Display each result
+        results.forEach(function(result) {
+            var resultElement = document.createElement('div');
+            resultElement.innerHTML = `<strong>${result.name}</strong> - ${result.location}, Price: ${result.price}`;
+            resultsContainer.appendChild(resultElement);
+        });
+    }
+</script>
+
+</body>
+</html>

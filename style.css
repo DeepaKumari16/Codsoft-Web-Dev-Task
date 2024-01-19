@@ -1,0 +1,130 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url("dream_dest.png");
+    background-position: center;
+    
+}
+
+main{
+    margin: 20px auto;
+    /*background-color: rgba(240, 248, 255, 0.575);*/
+    box-shadow: 2px 0 5px rgb(0, 0, 0);
+    text-align: center;
+    
+    max-width: 800px;
+
+    background: transparent;
+    backdrop-filter: blur(20px);
+
+    border: 2px solid rgba(234, 231, 231, 0.491);
+    border-radius: 10px;
+    
+}
+
+header{
+    margin: 0;
+    padding: 20px;
+    font-size: 25px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    color:rgb(241, 168, 22);
+    
+}
+
+#home{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    color: aliceblue;
+    font-size: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    
+    background-color: beige;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#destination, button{
+    border: 2px solid rgba(255, 255, 255, 0.735);
+    border-radius: 17px;
+    box-shadow: 2px 0 5px;
+    max-width: 2000px;
+    padding: 8px;
+    font-size: 15px;
+}
+
+#search h2, #booking h2, #login h2{
+    color: rgb(9, 9, 126);
+    
+}
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    background-color: azure;
+    color: rgb(23, 216, 216);
+}
+
+.wrapper{
+    margin: 0px auto;
+    /*background-color: rgba(240, 248, 255, 0.575);*/
+    box-shadow: 2px 0 5px rgb(0, 0, 0);
+    text-align: center;
+    
+    max-width: 400px;
+
+    background: transparent;
+    backdrop-filter: blur(20px);
+
+    border: 2px solid rgba(234, 231, 231, 0.491);
+    border-radius: 10px;
+    
+}
+
+.wrapper{
+    margin-top: 20px;
+}
+.wrapper h1{
+    color: white;
+}
+
+
+.input input {
+    width: 70%;
+    height: 25px;
+    margin: 10px;
+    border: 2px solid rgba(207, 207, 227, 0.4);
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 2px 0 4px;
+    
+}
+
+.input ::placeholder{
+    color: azure;
+    padding: 15px;
+}
+
+.btn{
+    width: 70%;
+    height: 30px;
+    margin: 10px;
+    border: 2px solid rgba(207, 207, 227, 0.4);
+    border-radius: 10px;
+    padding: 5px;
+}
